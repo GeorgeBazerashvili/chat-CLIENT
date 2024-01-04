@@ -9,7 +9,7 @@ import axios from "axios";
 export const AppSource = createContext(null);
 
 function App() {
-  axios.defaults.baseURL = "https://chat-rest-production.up.railway.app";
+  axios.defaults.baseURL = "http://localhost:3000";
   const [loggedIn, setLoggedIn] = useState(
     !!localStorage.getItem("accessToken")
   );
